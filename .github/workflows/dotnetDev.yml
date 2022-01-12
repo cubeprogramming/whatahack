@@ -22,7 +22,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.0.x
+        dotnet-version: 3.1.x
 
     - name: Restore dependencies
       run: dotnet restore ./Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj
@@ -31,4 +31,4 @@ jobs:
       run: dotnet build ./Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj --no-restore
 
     - name: Test
-      run: dotnet test ./Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj --no-build --verbosity normal
+      run: dotnet test ./Application/tests/RazorPagesTestSample.Tests/RazorPagesTestSample.Tests.csproj --no-build --verbosity normal

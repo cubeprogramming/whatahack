@@ -3,7 +3,7 @@ on:
     branches:
       - main
     paths:
-      - '.github/workflows/deployDev.yml'
+      - '.github/workflows/deployProd.yml'
 
 name: Azure ARM
 jobs:

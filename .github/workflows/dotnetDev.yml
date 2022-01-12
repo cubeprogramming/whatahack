@@ -5,7 +5,10 @@ on:
     branches:
       - main
     paths:
-      - '.github/workflows/deployDev.yml'
+      - './Application'
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
